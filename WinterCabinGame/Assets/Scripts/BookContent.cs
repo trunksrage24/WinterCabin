@@ -5,5 +5,5 @@ using UnityEngine;
 public class BookContent : ScriptableObject
 {
     [field: SerializeField]
-    private List<Material> contents;
+    public List<Material> contents;
 }
