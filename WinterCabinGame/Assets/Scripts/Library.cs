@@ -31,10 +31,10 @@ public class Library : MonoBehaviour
         int i = 0;
         foreach (Slot s in slots)
         {
-            if (!IsBookInRightSlot(s.Contained, i))
+            /*if (!IsBookInRightSlot(s.Contained, i))
             {
                 return false;
-            }
+            }*/
 
             i += 1;
         }
@@ -42,8 +42,8 @@ public class Library : MonoBehaviour
         return true;
     }
 
-    private bool IsBookInRightSlot(Book book, int slotIdx)
+    /*private bool IsBookInRightSlot(Book book, int slotIdx)
     {
         return book != null && book.Library == id && book.Position == slotIdx;
-    }
+    }*/
 }
