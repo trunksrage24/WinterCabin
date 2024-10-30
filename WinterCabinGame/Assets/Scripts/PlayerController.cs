@@ -48,7 +48,7 @@ public class PlayerController : MonoBehaviour
 
         if (grounded)
         {
-            newVelocity = transform.rotation * input * moveSpeed * Time.deltaTime;
+            newVelocity = transform.rotation * input * moveSpeed /* * Time.deltaTime */ ;
         }
         else
         {
