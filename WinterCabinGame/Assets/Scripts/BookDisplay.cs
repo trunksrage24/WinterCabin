@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using System;
+using TMPro;
 
 public class BookDisplay : MonoBehaviour
 {
@@ -9,18 +10,44 @@ public class BookDisplay : MonoBehaviour
     private List<BookContent> bookContents;
 
     [SerializeField]
+    private Slot slot;
+
+    [SerializeField]
     private GameObject openedBook;
-    private int bookID;
-    private int currentPage;
+
+    [SerializeField]
+    private Transform openedBookPivot;
+
+    private Book book;
+    private int bookID = 0;
+    private int currentPage = 0;
 
     private void Start()
     {
-        currentPage = 0;
+        if(slot.Contained != null)
+        {
+            ObtainBookData();
+        }
+        else
+            return;
+
+        slot.OnPlace += HandleSlotPlace;
+    }
+    private void ObtainBookData()
+    {
+        book = slot.Contained;
+        bookID = book.id;
+    }
+    private void HandleSlotPlace()
+    {
+        ObtainBookData();
+        Instantiate(openedBook, openedBookPivot);
+        return;
     }
 
     private void ChangePage(int cur, int page, BookContent content)
     {
-        if(cur + page > content.contents.Count)
+        if(cur + page > content.contents.Count || cur + page < 0)
         {
             return;
         } 
@@ -35,7 +62,8 @@ public class BookDisplay : MonoBehaviour
     {
         Renderer renderer = openedBook.GetComponent<Renderer>();
         Material currentMaterial = renderer.material;
+        Material newMaterial = bookContents[bookID].contents[currentPage];
 
-        
+        renderer.material = newMaterial;
     }
 }

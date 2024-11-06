@@ -1224,7 +1224,6 @@ GameObject:
   m_Component:
   - component: {fileID: 457730399}
   - component: {fileID: 457730400}
-  - component: {fileID: 457730401}
   m_Layer: 6
   m_Name: Display
   m_TagString: Untagged
@@ -1265,28 +1264,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 19aab5108d4d2d045a59e0f84db77502, type: 2}
   - {fileID: 11400000, guid: de85bce097f931c45b2ad511b349fabf, type: 2}
   - {fileID: 11400000, guid: a1ca3c80ad898b94d9384de6c553e657, type: 2}
+  slot: {fileID: 1052705352}
   openedBook: {fileID: 2531983199082729301, guid: 6373eacf62a70724c9f2d2b90326a5de, type: 3}
---- !u!65 &457730401
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 457730398}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.613739, y: 0.08498001, z: 0.3740989}
-  m_Center: {x: 0.10924482, y: 0.036321282, z: -0.012034476}
+  openedBookPivot: {fileID: 1505652953}
 --- !u!1 &466396315
 GameObject:
   m_ObjectHideFlags: 0
@@ -1840,8 +1820,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1052705350}
-  m_Layer: 0
-  m_Name: Model
+  - component: {fileID: 1052705352}
+  - component: {fileID: 1052705351}
+  m_Layer: 6
+  m_Name: slot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1861,8 +1843,44 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1113720251}
+  - {fileID: 1393102007}
   m_Father: {fileID: 457730399}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1052705351
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1052705349}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.613739, y: 0.08498001, z: 0.3740989}
+  m_Center: {x: 0.10924482, y: 0.036321282, z: -0.012034476}
+--- !u!114 &1052705352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1052705349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5fbe92c6753e6d43af0a0d0be43c991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pivot: {fileID: 1393102007}
+  book: {fileID: 0}
 --- !u!1 &1093866274
 GameObject:
   m_ObjectHideFlags: 0
@@ -1953,8 +1971,8 @@ GameObject:
   - component: {fileID: 1113720251}
   - component: {fileID: 1113720253}
   - component: {fileID: 1113720252}
-  m_Layer: 0
-  m_Name: Cube
+  m_Layer: 6
+  m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2601,6 +2619,37 @@ Transform:
   - {fileID: 1217319608}
   - {fileID: 457730399}
   m_Father: {fileID: 1486983243}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1393102006
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1393102007}
+  m_Layer: 6
+  m_Name: Pivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1393102007
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393102006}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -9999, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1052705350}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1486983242
 GameObject:
