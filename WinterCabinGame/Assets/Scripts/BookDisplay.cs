@@ -54,11 +54,11 @@ public class BookDisplay : MonoBehaviour
         else
         {
             currentPage += currentPage + page;
-            UpdatePage(currentPage);
+            UpdatePage();
         }
     }
 
-    private void UpdatePage(int currentPage)
+    private void UpdatePage()
     {
         Renderer renderer = openedBook.GetComponent<Renderer>();
         Material currentMaterial = renderer.material;
