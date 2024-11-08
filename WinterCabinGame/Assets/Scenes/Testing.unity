@@ -1301,6 +1301,8 @@ MonoBehaviour:
   slot: {fileID: 1052705352}
   openedBook: {fileID: 2531983199082729301, guid: 6373eacf62a70724c9f2d2b90326a5de, type: 3}
   openedBookPivot: {fileID: 1505652953}
+  rightButton: {fileID: 788023478}
+  leftButton: {fileID: 1633902348}
 --- !u!1 &466396315
 GameObject:
   m_ObjectHideFlags: 0
@@ -1685,6 +1687,7 @@ GameObject:
   m_Component:
   - component: {fileID: 788023476}
   - component: {fileID: 788023477}
+  - component: {fileID: 788023478}
   m_Layer: 6
   m_Name: RightChanger
   m_TagString: Untagged
@@ -1729,6 +1732,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &788023478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788023475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c92a6d6e79863e45afe3934c2d21e25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &861492514
 GameObject:
   m_ObjectHideFlags: 0
@@ -3317,6 +3332,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1633902346}
   - component: {fileID: 1633902347}
+  - component: {fileID: 1633902348}
   m_Layer: 6
   m_Name: LeftChanger
   m_TagString: Untagged
@@ -3361,6 +3377,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1633902348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633902345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c92a6d6e79863e45afe3934c2d21e25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1636152101
 PrefabInstance:
   m_ObjectHideFlags: 0

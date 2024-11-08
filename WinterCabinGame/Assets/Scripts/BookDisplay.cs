@@ -18,6 +18,12 @@ public class BookDisplay : MonoBehaviour
     [SerializeField]
     private Transform openedBookPivot;
 
+    [SerializeField]
+    private Button rightButton;
+
+    [SerializeField]
+    private Button leftButton;
+
     private Book book;
     private int bookID = 0;
     private int currentPage = 0;
@@ -28,15 +34,17 @@ public class BookDisplay : MonoBehaviour
         {
             ObtainBookData();
         }
-        else
-            return;
-
+    
         slot.OnPlace += HandleSlotPlace;
+        rightButton.OnCLick += HandleButtonClick;
+        leftButton.OnCLick += HandleButtonClick;
+
     }
     private void ObtainBookData()
     {
         book = slot.Contained;
         bookID = book.id;
+        Debug.Log($"{bookID}");
     }
     private void HandleSlotPlace()
     {
@@ -45,15 +53,25 @@ public class BookDisplay : MonoBehaviour
         return;
     }
 
-    private void ChangePage(int cur, int page, BookContent content)
+    private void HandleButtonClick(Button button)
     {
-        if(cur + page > content.contents.Count || cur + page < 0)
+        if(button == rightButton)
+            ChangePage(currentPage, 1, bookContents[bookID]);
+        else if(button == leftButton)
+            ChangePage(currentPage, -1, bookContents[bookID]);
+        else
+            return;
+    }
+
+    private void ChangePage(int curpage, int page, BookContent content)
+    {
+        if(curpage + page > content.contents.Count || curpage + page < 0)
         {
             return;
         } 
         else
         {
-            currentPage += currentPage + page;
+            currentPage += page;
             UpdatePage();
         }
     }
@@ -61,9 +79,10 @@ public class BookDisplay : MonoBehaviour
     private void UpdatePage()
     {
         Renderer renderer = openedBook.GetComponent<Renderer>();
-        Material currentMaterial = renderer.material;
+        //Material currentMaterial = renderer.material;
         Material newMaterial = bookContents[bookID].contents[currentPage];
 
         renderer.material = newMaterial;
+        Debug.Log($"{currentPage}");
     }
 }
