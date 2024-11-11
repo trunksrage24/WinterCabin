@@ -68,6 +68,8 @@ public class Slot : Interactable
         Book ret = Contained;
         Contained = null;
 
+        OnTake?.Invoke();
+
         return ret;
     }
 
@@ -81,4 +83,6 @@ public class Slot : Interactable
     }
 
     public event Action OnPlace;
+
+    public event Action OnTake;
 }

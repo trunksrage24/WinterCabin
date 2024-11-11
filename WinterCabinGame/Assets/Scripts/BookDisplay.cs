@@ -25,6 +25,7 @@ public class BookDisplay : MonoBehaviour
     private Button leftButton;
 
     private Book book;
+    private GameObject instanceBook;
     private int bookID = 0;
     private int currentPage = 0;
 
@@ -36,6 +37,7 @@ public class BookDisplay : MonoBehaviour
         }
     
         slot.OnPlace += HandleSlotPlace;
+        slot.OnTake += BookReset;
         rightButton.OnCLick += HandleButtonClick;
         leftButton.OnCLick += HandleButtonClick;
 
@@ -49,7 +51,8 @@ public class BookDisplay : MonoBehaviour
     private void HandleSlotPlace()
     {
         ObtainBookData();
-        Instantiate(openedBook, openedBookPivot);
+        instanceBook = Instantiate(openedBook, openedBookPivot);
+        UpdatePage();
         return;
     }
 
@@ -65,7 +68,7 @@ public class BookDisplay : MonoBehaviour
 
     private void ChangePage(int curpage, int page, BookContent content)
     {
-        if(curpage + page > content.contents.Count || curpage + page < 0)
+        if(curpage + page >= content.contents.Count || curpage + page < 0)
         {
             return;
         } 
@@ -78,11 +81,20 @@ public class BookDisplay : MonoBehaviour
 
     private void UpdatePage()
     {
-        Renderer renderer = openedBook.GetComponent<Renderer>();
+        //Renderer renderer = openedBook.GetComponent<Renderer>();
         //Material currentMaterial = renderer.material;
         Material newMaterial = bookContents[bookID].contents[currentPage];
 
-        renderer.material = newMaterial;
+        instanceBook.GetComponent<Renderer>().material = newMaterial;
+        //renderer.material = newMaterial;
         Debug.Log($"{currentPage}");
+    }
+
+    private void BookReset()
+    {
+        currentPage = 0;
+        bookID = 0;
+        book = null;
+        Destroy(instanceBook);
     }
 }
