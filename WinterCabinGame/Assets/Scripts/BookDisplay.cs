@@ -1,8 +1,5 @@
 using UnityEngine;
 using System.Collections.Generic;
-using Unity.VisualScripting;
-using System;
-using TMPro;
 
 public class BookDisplay : MonoBehaviour
 {
@@ -81,12 +78,9 @@ public class BookDisplay : MonoBehaviour
 
     private void UpdatePage()
     {
-        //Renderer renderer = openedBook.GetComponent<Renderer>();
-        //Material currentMaterial = renderer.material;
         Material newMaterial = bookContents[bookID].contents[currentPage];
-
         instanceBook.GetComponent<Renderer>().material = newMaterial;
-        //renderer.material = newMaterial;
+        
         Debug.Log($"{currentPage}");
     }
 
