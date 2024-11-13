@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3143ebb68c683543b9bdbd16cb5da87, type: 3}
+  m_Name: BaseRockBookContent
+  m_EditorClassIdentifier: 
+  contents:
+  - {fileID: 2100000, guid: e4cf408f2c2c1b04a9d7fe4a488e689a, type: 2}
+  - {fileID: 2100000, guid: 9e3b1ff771c1bd145961ca95ca51ecde, type: 2}
+  - {fileID: 2100000, guid: 7aef5407a76899e43ae5107bbc5d2368, type: 2}
+  - {fileID: 2100000, guid: 62b1cf72de6542540a7b50796525f229, type: 2}
+  - {fileID: 2100000, guid: f8c81db0d0ab8a7409a2b308754fc39e, type: 2}
+  - {fileID: 2100000, guid: d0df874afe5c2ac42b8f6282cd59d56c, type: 2}
