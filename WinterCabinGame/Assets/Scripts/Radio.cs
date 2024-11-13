@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -10,6 +11,13 @@ public class Radio : MonoBehaviour
 
     [SerializeField]
     private List<int> puzzles;
+
+    [SerializeField]
+    private Map map;
+
+    [SerializeField]
+    private BookDisplay display;
+
     private int currentPuzzle = 0;
 
     void Start()
@@ -31,13 +39,18 @@ public class Radio : MonoBehaviour
         {
             case 1:
             {
-                return true;
+                return Puzzle1Verification();
             }
             case 2:
             {
                 return true;
             }
         }
+        return false;
+    }
+
+    private bool Puzzle1Verification()
+    {
         return false;
     }
 

@@ -3681,6 +3681,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1412921100}
+  - component: {fileID: 1412921101}
   m_Layer: 0
   m_Name: Radio
   m_TagString: Untagged
@@ -3705,6 +3706,22 @@ Transform:
   - {fileID: 16372958}
   m_Father: {fileID: 1379416973}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1412921101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1412921099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8be159d60c017684f8a4f8cdb3f3347a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radioButton: {fileID: 16372959}
+  puzzles: 00000000010000000200000003000000
+  map: {fileID: 369685649603241948}
+  display: {fileID: 457730400}
 --- !u!1 &1486983242
 GameObject:
   m_ObjectHideFlags: 0
@@ -5005,6 +5022,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6218383054766725269, guid: 13867ce6caf376a459bcfb4e75c547ef, type: 3}
   m_PrefabInstance: {fileID: 369685649603241946}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &369685649603241948 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9035315149314970040, guid: 13867ce6caf376a459bcfb4e75c547ef, type: 3}
+  m_PrefabInstance: {fileID: 369685649603241946}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98d6849d26bfa2543900429a20e86151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2455302042464271600
 PrefabInstance:
   m_ObjectHideFlags: 0
