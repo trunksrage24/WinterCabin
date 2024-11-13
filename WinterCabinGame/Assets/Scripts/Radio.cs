@@ -33,6 +33,10 @@ public class Radio : MonoBehaviour
             {
                 return true;
             }
+            case 2:
+            {
+                return true;
+            }
         }
         return false;
     }
