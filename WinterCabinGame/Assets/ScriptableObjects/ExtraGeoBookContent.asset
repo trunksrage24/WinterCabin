@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3143ebb68c683543b9bdbd16cb5da87, type: 3}
+  m_Name: ExtraGeoBookContent
+  m_EditorClassIdentifier: 
+  contents:
+  - {fileID: 2100000, guid: 86d392a0a970c1e42ab9fe9a4e8b1e9a, type: 2}
+  - {fileID: 2100000, guid: 45041ff54f20eef44b203aed63a7ceac, type: 2}
+  - {fileID: 2100000, guid: 1339af2d980114d40bbd3ce734e600ef, type: 2}
+  - {fileID: 2100000, guid: 8ebf1241868c62f40ac0293469f46ed5, type: 2}
+  - {fileID: 2100000, guid: 99c355f283b76834396213ca7a872ea4, type: 2}
+  - {fileID: 2100000, guid: caf4354c2217045478b4e4b6268d83c1, type: 2}
+  - {fileID: 2100000, guid: ae79702980959204bbdbc9a4fcb93f8f, type: 2}
+  - {fileID: 2100000, guid: 812fe0ee29061984b8a863f7177401b1, type: 2}
+  - {fileID: 2100000, guid: ccddd5f42ea7e664bbd7dee40de33f3a, type: 2}
+  - {fileID: 2100000, guid: f2dedd795071870498e791aaa858883d, type: 2}
+  - {fileID: 2100000, guid: 2420ddea62bae674e980c059e03c74d1, type: 2}
+  - {fileID: 2100000, guid: 1339af2d980114d40bbd3ce734e600ef, type: 2}
+  - {fileID: 2100000, guid: 55ec55a750214c24187366294d0f3d92, type: 2}
+  - {fileID: 2100000, guid: 10ec0de1de741554493e6b9be7bcb55b, type: 2}
