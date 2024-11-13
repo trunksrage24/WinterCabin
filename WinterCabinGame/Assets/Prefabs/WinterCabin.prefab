@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7641225637220714944
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 4c70d5aab109f094885aa4d02ac7ae30, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.73
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4c70d5aab109f094885aa4d02ac7ae30, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4c70d5aab109f094885aa4d02ac7ae30, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.23
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4c70d5aab109f094885aa4d02ac7ae30, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7259451
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4c70d5aab109f094885aa4d02ac7ae30, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4c70d5aab109f094885aa4d02ac7ae30, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.68775266
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4c70d5aab109f094885aa4d02ac7ae30, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4c70d5aab109f094885aa4d02ac7ae30, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4c70d5aab109f094885aa4d02ac7ae30, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -86.905
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4c70d5aab109f094885aa4d02ac7ae30, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8568838100262593191, guid: 4c70d5aab109f094885aa4d02ac7ae30, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: -8568838100262593191, guid: 4c70d5aab109f094885aa4d02ac7ae30, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.13
+      objectReference: {fileID: 0}
+    - target: {fileID: -8568838100262593191, guid: 4c70d5aab109f094885aa4d02ac7ae30, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.69
+      objectReference: {fileID: 0}
+    - target: {fileID: -3932820483147423477, guid: 4c70d5aab109f094885aa4d02ac7ae30, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -451707579132013929, guid: 4c70d5aab109f094885aa4d02ac7ae30, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4c70d5aab109f094885aa4d02ac7ae30, type: 3}
+      propertyPath: m_Name
+      value: WinterCabin
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554330685085489218, guid: 4c70d5aab109f094885aa4d02ac7ae30, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1696680030521023185, guid: 4c70d5aab109f094885aa4d02ac7ae30, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6064098618779517284, guid: 4c70d5aab109f094885aa4d02ac7ae30, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6652487382911312700, guid: 4c70d5aab109f094885aa4d02ac7ae30, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7339838001497684694, guid: 4c70d5aab109f094885aa4d02ac7ae30, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7713437271094527785, guid: 4c70d5aab109f094885aa4d02ac7ae30, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4c70d5aab109f094885aa4d02ac7ae30, type: 3}
