@@ -10,15 +10,21 @@ public class Radio : MonoBehaviour
     private Button radioButton;
 
     [SerializeField]
-    private List<int> puzzles;
-
-    [SerializeField]
     private Map map;
 
     [SerializeField]
     private BookDisplay display;
 
-    private int currentPuzzle = 0;
+    [SerializeField]
+    private int puzzles;
+
+    [SerializeField]
+    private GameObject solution1;
+
+    [SerializeField]
+    private Highlightable solution2;
+
+    private int currentPuzzle = 1;
 
     void Start()
     {
@@ -28,30 +34,40 @@ public class Radio : MonoBehaviour
     private void HandleButtonClick(Button button)
     {
         if(IsPuzzleComplete(currentPuzzle))
-            currentPuzzle += 1;
+            UpdatePuzzle();
         else
             return;
     }
 
+    private void UpdatePuzzle()
+    {
+        if(currentPuzzle + 1 < puzzles)
+            currentPuzzle += 1;
+        else
+            return;
+    }
     private bool IsPuzzleComplete(int puzzle)
     {
         switch(puzzle)
         {
-            case 1:
+            case <= 2:
             {
-                return Puzzle1Verification();
+                return Puzzle1_2Verification();
             }
-            case 2:
+            case 3:
             {
-                return true;
+                return false;
             }
         }
         return false;
     }
 
-    private bool Puzzle1Verification()
+    private bool Puzzle1_2Verification()
     {
-        return false;
+        if(map.highlight == solution1 && currentPuzzle == 0 || map.highlight == solution2 && currentPuzzle == 1)
+            return true;
+        else
+            return false;
     }
 
 }

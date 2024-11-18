@@ -16,6 +16,8 @@ public class Map : MonoBehaviour
 
     private int currentMapPage = 0;
 
+    public Highlightable highlight;
+
     private void Start()
     {
         rightButton.OnCLick += HandleButtonClick;
