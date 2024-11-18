@@ -3830,9 +3830,9 @@ MonoBehaviour:
   radioButton: {fileID: 16372959}
   map: {fileID: 369685649603241948}
   display: {fileID: 457730400}
-  puzzles: 0
-  solution1: {fileID: 0}
-  solution2: {fileID: 0}
+  puzzles: 2
+  solution1: {fileID: 11400000, guid: afdf7baa15a87494baf5818ecf6694d9, type: 2}
+  solution2: {fileID: 11400000, guid: ff7b5307ffe628a4480ab43b4c37e38f, type: 2}
 --- !u!1 &1486983242
 GameObject:
   m_ObjectHideFlags: 0

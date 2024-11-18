@@ -19,10 +19,10 @@ public class Radio : MonoBehaviour
     private int puzzles;
 
     [SerializeField]
-    private GameObject solution1;
+    private PuzzleSolution solution1;
 
     [SerializeField]
-    private Highlightable solution2;
+    private PuzzleSolution solution2;
 
     private int currentPuzzle = 1;
 
@@ -64,10 +64,11 @@ public class Radio : MonoBehaviour
 
     private bool Puzzle1_2Verification()
     {
-        if(map.highlight == solution1 && currentPuzzle == 0 || map.highlight == solution2 && currentPuzzle == 1)
+        if(map.currentMapPage == solution1.level && map.highlight.id == solution1.section && currentPuzzle == 0)
             return true;
-        else
-            return false;
+        else if (map.currentMapPage == solution2.level && map.highlight.id == solution2.section && currentPuzzle == 0)
+            return true;
+        return false;
     }
 
 }
