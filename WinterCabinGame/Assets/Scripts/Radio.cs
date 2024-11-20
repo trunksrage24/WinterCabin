@@ -33,15 +33,20 @@ public class Radio : MonoBehaviour
 
     private void HandleButtonClick(Button button)
     {
+        Debug.Log($"Am here uwu I was here");
+
         if(IsPuzzleComplete(currentPuzzle))
+        {
             UpdatePuzzle();
+            Debug.Log($"{currentPuzzle}");
+        }
         else
             return;
     }
 
     private void UpdatePuzzle()
     {
-        if(currentPuzzle + 1 < puzzles)
+        if(currentPuzzle + 1 <= puzzles)
             currentPuzzle += 1;
         else
             return;
@@ -52,6 +57,7 @@ public class Radio : MonoBehaviour
         {
             case <= 2:
             {
+                Debug.Log($"All in baby");
                 return Puzzle1_2Verification();
             }
             case 3:
@@ -64,10 +70,17 @@ public class Radio : MonoBehaviour
 
     private bool Puzzle1_2Verification()
     {
-        if(map.currentMapPage == solution1.level && map.highlight.id == solution1.section && currentPuzzle == 0)
+        if(map.currentMapPage + 1 == solution1.level && map.selectedSection == solution1.section && currentPuzzle == 1)
+        {
+            Debug.Log($"solved");
             return true;
-        else if (map.currentMapPage == solution2.level && map.highlight.id == solution2.section && currentPuzzle == 0)
+        }
+        else if (map.currentMapPage + 1 == solution2.level && map.selectedSection == solution2.section && currentPuzzle == 2)
+        {
+            Debug.Log($"solved");
             return true;
+        }
+        Debug.Log($"{map.currentMapPage + 1} {map.selectedSection}");
         return false;
     }
 

@@ -16,15 +16,18 @@ public class Map : MonoBehaviour
 
     public int currentMapPage { get; private set; }
 
-    private int selectedSection = 0;
+    public int selectedSection { get; private set; }
 
-    public Highlightable highlight { get; private set; }
+    [SerializeField]
+    private Highlightable[] highlights;
 
     private void Start()
     {
         rightButton.OnCLick += HandleButtonClick;
         leftButton.OnCLick += HandleButtonClick;
-        highlight.OnCLick += HandleHighlightClick;
+
+        foreach (Highlightable highlight in highlights)
+            highlight.OnCLick += HandleHighlightClick;
     }
 
     private void HandleButtonClick(Button button)
@@ -39,20 +42,9 @@ public class Map : MonoBehaviour
 
     private void HandleHighlightClick(Highlightable section)
     {
-        if(section.id == 1)
-            selectedSection = 1;
-        else if(section.id == 2)
-            selectedSection = 2;
-        else if(section.id == 3)
-            selectedSection = 3;
-        else if(section.id == 4)
-            selectedSection = 4;
-        else if(section.id == 5)
-            selectedSection = 5;
-        else if(section.id == 6)
-            selectedSection = 6;
-        else
-            return;
+        selectedSection = section.id;
+        
+        Debug.Log($"{selectedSection}");
     }
 
     private void ChangeMapPage(int curpage, int page)
