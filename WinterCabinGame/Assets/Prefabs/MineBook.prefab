@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 386762049576542355}
   - component: {fileID: 6433655721159876842}
   m_Layer: 6
-  m_Name: VerdeBook
+  m_Name: MineBook
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -68,7 +68,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e9b7499041b68742bd8841ad7e9421f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <id>k__BackingField: 2
+  <id>k__BackingField: 3
 --- !u!114 &6433655721159876842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,7 +145,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e4cc40d4b7226814cbaca41234af545c, type: 2}
+  - {fileID: 2100000, guid: 40ae6d69877801d4fa8b87011c2b7ea5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3143ebb68c683543b9bdbd16cb5da87, type: 3}
+  m_Name: MineLevelsBookContent
+  m_EditorClassIdentifier: 
+  contents:
+  - {fileID: 2100000, guid: fbfb426d1932a8242ac7e8f84be5b230, type: 2}
+  - {fileID: 2100000, guid: de607fbca9a73564a82452168ddb26fb, type: 2}
+  - {fileID: 2100000, guid: e078eb70cbfa45f43af4a7d518d6c428, type: 2}
+  - {fileID: 2100000, guid: 58d7bf99cb8b5314895462ca962d4b57, type: 2}
+  - {fileID: 2100000, guid: 98310433e74981e4c937e6a7056c1529, type: 2}
+  - {fileID: 2100000, guid: 159eef8b4eee65541b2b65ea970b3a26, type: 2}

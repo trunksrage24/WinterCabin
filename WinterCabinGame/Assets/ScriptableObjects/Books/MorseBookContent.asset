@@ -10,11 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b3143ebb68c683543b9bdbd16cb5da87, type: 3}
-  m_Name: RedBookContent
+  m_Name: MorseBookContent
   m_EditorClassIdentifier: 
   contents:
-  - {fileID: 2100000, guid: 55128ef7f24517545ad4157d06c0d155, type: 2}
-  - {fileID: 2100000, guid: 73db688cfd7299c498b625187b9b7a02, type: 2}
-  - {fileID: 2100000, guid: 9b80883b4940096449b56152e54f7861, type: 2}
-  - {fileID: 2100000, guid: 95a6c123865ba064c9b42764d506494e, type: 2}
-  - {fileID: 2100000, guid: 6f314a86f0633a84cbed246f36f52bbb, type: 2}
+  - {fileID: 2100000, guid: 7b9513623fd0ec346b630469d8c5d659, type: 2}
+  - {fileID: 2100000, guid: c64e305c1bb71c14aaa65cf13cc7e8d1, type: 2}
+  - {fileID: 2100000, guid: 27070c05f79814948adafb845c9adb85, type: 2}
+  - {fileID: 2100000, guid: 2d225b1344774424284e59fa25e05f98, type: 2}

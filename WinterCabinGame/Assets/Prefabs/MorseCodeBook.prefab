@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 386762049576542355}
   - component: {fileID: 6433655721159876842}
   m_Layer: 6
-  m_Name: BlueBook
+  m_Name: MorseCodeBook
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -68,8 +68,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e9b7499041b68742bd8841ad7e9421f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Library>k__BackingField: 0
-  <Position>k__BackingField: 0
+  <id>k__BackingField: 1
 --- !u!114 &6433655721159876842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146,7 +145,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e34b0c5080e5e6048af5583dcf8120b2, type: 2}
+  - {fileID: 2100000, guid: 1b32ce767d5d6114a8de8641d6c9ade5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
