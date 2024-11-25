@@ -1,5 +1,58 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6467880968181054152
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3752817608306724047}
+  - component: {fileID: 4647512868849348571}
+  m_Layer: 0
+  m_Name: Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3752817608306724047
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6467880968181054152}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.40414652, y: -0, z: -0.00000008940696, w: 0.9146943}
+  m_LocalPosition: {x: -0.3, y: 0, z: -8.92}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 563124485132517277}
+  m_LocalEulerAnglesHint: {x: -47.675, y: 0, z: 0}
+--- !u!65 &4647512868849348571
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6467880968181054152}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 3.5159216, z: 1.939378}
+  m_Center: {x: -0.00000004187792, y: 0.06814951, z: 0.4696896}
 --- !u!1001 &25376458492385398
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -82,24 +135,32 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 617570fa1d03fc54a810adf4bbdacd45, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: -7128873102911021908, guid: c86b6fa0338324045973b17cfae7b6b4, type: 3}
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: c86b6fa0338324045973b17cfae7b6b4, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8893186356714861821}
+      addedObject: {fileID: 3752817608306724047}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2550463727306718371, guid: c86b6fa0338324045973b17cfae7b6b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3669406487410116861}
   m_SourcePrefab: {fileID: 100100000, guid: c86b6fa0338324045973b17cfae7b6b4, type: 3}
---- !u!1 &2110781330420548826 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -7128873102911021908, guid: c86b6fa0338324045973b17cfae7b6b4, type: 3}
+--- !u!4 &563124485132517277 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c86b6fa0338324045973b17cfae7b6b4, type: 3}
   m_PrefabInstance: {fileID: 25376458492385398}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &8893186356714861821
-MeshCollider:
+--- !u!1 &2539809179757585621 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2550463727306718371, guid: c86b6fa0338324045973b17cfae7b6b4, type: 3}
+  m_PrefabInstance: {fileID: 25376458492385398}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &3669406487410116861
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2110781330420548826}
+  m_GameObject: {fileID: 2539809179757585621}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -111,7 +172,6 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 8701276897992384344, guid: c86b6fa0338324045973b17cfae7b6b4, type: 3}
+  serializedVersion: 3
+  m_Size: {x: 0.010118852, y: 0.009999999, z: 0.0106832}
+  m_Center: {x: -0.000011618135, y: -0.005000005, z: 0.0047094533}
