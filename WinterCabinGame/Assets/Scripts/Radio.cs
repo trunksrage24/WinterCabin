@@ -13,9 +13,6 @@ public class Radio : MonoBehaviour
     private Map map;
 
     [SerializeField]
-    private BookDisplay display;
-
-    [SerializeField]
     private int puzzles;
 
     [SerializeField]
@@ -24,11 +21,18 @@ public class Radio : MonoBehaviour
     [SerializeField]
     private PuzzleSolution solution2;
 
+    [SerializeField]
+    private GameObject puzzleUI1;
+
+    [SerializeField]
+    private GameObject puzzleUI2;
+
     private int currentPuzzle = 1;
 
     void Start()
     {
         radioButton.OnCLick += HandleButtonClick;
+        UIUpdate();
     }
 
     private void HandleButtonClick(Button button)
@@ -47,7 +51,10 @@ public class Radio : MonoBehaviour
     private void UpdatePuzzle()
     {
         if(currentPuzzle + 1 <= puzzles)
+        {
             currentPuzzle += 1;
+            UIUpdate();
+        }
         else
             return;
     }
@@ -83,5 +90,15 @@ public class Radio : MonoBehaviour
         Debug.Log($"{map.currentMapPage + 1} {map.selectedSection}");
         return false;
     }
-
+    private void UIUpdate()
+    {
+        if (currentPuzzle == 1)
+            puzzleUI1.SetActive(true);
+        else
+        {
+            puzzleUI1.SetActive(false);
+            puzzleUI2.SetActive(true);
+        }
+        
+    }
 }
