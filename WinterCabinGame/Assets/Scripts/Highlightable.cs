@@ -17,12 +17,15 @@ public class Highlightable : Interactable
     {
         OnCLick?.Invoke(this);
         isSelected = !isSelected;
-
-        if(isSelected)
-        {
-
-        }
         return;
+    }
+
+    public void ChangeMaterial(Material oldMaterial)
+    {
+        if (isSelected)
+            this.material = highlight;
+        else
+            this.material = oldMaterial;
     }
 
     public event Action <Highlightable> OnCLick;
