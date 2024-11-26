@@ -23,9 +23,9 @@ public class Highlightable : Interactable
     public void ChangeMaterial(Material oldMaterial)
     {
         if (isSelected)
-            this.material = highlight;
-        else
-            this.material = oldMaterial;
+        {
+            Debug.Log($"changed");
+        }
     }
 
     public event Action <Highlightable> OnCLick;

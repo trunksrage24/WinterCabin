@@ -27,6 +27,9 @@ public class Radio : MonoBehaviour
     [SerializeField]
     private GameObject puzzleUI2;
 
+    [SerializeField]
+    private GameObject puzzleUI3;
+
     private int currentPuzzle = 1;
 
     void Start()
@@ -94,10 +97,16 @@ public class Radio : MonoBehaviour
     {
         if (currentPuzzle == 1)
             puzzleUI1.SetActive(true);
-        else
+        else if (currentPuzzle == 2)
         {
             puzzleUI1.SetActive(false);
             puzzleUI2.SetActive(true);
+        }
+        else
+        {
+            puzzleUI1.SetActive(false);
+            puzzleUI2.SetActive(false);
+            puzzleUI3.SetActive(true);
         }
         
     }

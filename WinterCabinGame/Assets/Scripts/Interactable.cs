@@ -4,7 +4,7 @@ using UnityEngine.Rendering;
 
 public abstract class Interactable : MonoBehaviour
 {
-    public Material material;
+    private Material material;
     private LocalKeyword emissionKeyword;
 
     public virtual void Focus()
