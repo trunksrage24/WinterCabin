@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Wall
+  m_Name: HandrailBeam 1
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -31,11 +31,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: 68c1c7976fc7c6a4cb10afc20bed0a38, type: 3}
-        m_Scale: {x: 10, y: 10}
-        m_Offset: {x: 0, y: 0}
+        m_Texture: {fileID: 2800000, guid: 58a00745148cc98498b87c3e6f631cc1, type: 3}
+        m_Scale: {x: 20, y: 20}
+        m_Offset: {x: 0.6, y: 0}
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: 42f3b3af76e569d40b365677cf1ca913, type: 3}
+        m_Texture: {fileID: 2800000, guid: 354864fecbbdd0f4cb25f199cc459b8a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -55,19 +55,19 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 68c1c7976fc7c6a4cb10afc20bed0a38, type: 3}
-        m_Scale: {x: 10, y: 10}
-        m_Offset: {x: 0, y: 0}
+        m_Texture: {fileID: 2800000, guid: 58a00745148cc98498b87c3e6f631cc1, type: 3}
+        m_Scale: {x: 20, y: 20}
+        m_Offset: {x: 0.6, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: fe84f8518c8a4b64b901a7073e28c120, type: 3}
+        m_Texture: {fileID: 2800000, guid: 37eac386698775846a52b6abc536301f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
-        m_Texture: {fileID: 2800000, guid: 2a44f01baecb6f04f8779557cdab4702, type: 3}
+        m_Texture: {fileID: 2800000, guid: b7005f844e382aa45a7e78ca6b4e0f17, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
-        m_Texture: {fileID: 2800000, guid: 5f2530f3d3e49404ba9314a4b094b6ba, type: 3}
+        m_Texture: {fileID: 2800000, guid: 56178aedf5f640440adf9459ba6e0088, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
@@ -93,7 +93,7 @@ Material:
     - _AlphaToMask: 0
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
-    - _BumpScale: 1
+    - _BumpScale: 20
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
     - _Cull: 2
@@ -107,9 +107,9 @@ Material:
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _Metallic: 0
-    - _OcclusionStrength: 1
+    - _OcclusionStrength: 0
     - _OutlineWidth: 0.15
-    - _Parallax: 0.08
+    - _Parallax: 0.005
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _RimStep: 0.65
@@ -127,8 +127,8 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.4113207, g: 0.4113207, b: 0.4113207, a: 1}
-    - _Color: {r: 0.41132066, g: 0.41132066, b: 0.41132066, a: 1}
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _RimColor: {r: 1, g: 1, b: 1, a: 1}
@@ -136,7 +136,7 @@ Material:
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!114 &8730273129697376941
+--- !u!114 &9044138231703371381
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
