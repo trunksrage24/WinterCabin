@@ -14,12 +14,15 @@ public class Map : MonoBehaviour
     [SerializeField]
     private Renderer mapRenderer;
 
+    [SerializeField]
+    private Highlightable[] highlights;
+
+    [SerializeField]
+    private Material baseHighlightColor;
+
     public int currentMapPage { get; private set; }
 
     public int selectedSection { get; private set; }
-
-    [SerializeField]
-    private Highlightable[] highlights;
 
     private void Start()
     {
@@ -43,7 +46,7 @@ public class Map : MonoBehaviour
     private void HandleHighlightClick(Highlightable section)
     {
         selectedSection = section.id;
-        
+        section.ChangeMaterial(baseHighlightColor);
         Debug.Log($"{selectedSection}");
     }
 
