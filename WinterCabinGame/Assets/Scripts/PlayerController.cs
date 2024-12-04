@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         UpdateRotation();
 
@@ -48,14 +48,20 @@ public class PlayerController : MonoBehaviour
 
         if (grounded)
         {
-            newVelocity = transform.rotation * input * moveSpeed /* * Time.deltaTime */ ;
+            if (input == Vector3.zero)
+            {
+                newVelocity = Vector3.zero;
+                Debug.Log("Zerooooooooo");
+            }
+            else
+                newVelocity = transform.rotation * input * moveSpeed /* * Time.deltaTime */;
         }
         else
         {
             newVelocity = transform.rotation * input * airMoveSpeed * Time.deltaTime;
             newVelocity += Vector3.up * (velocity.y + gravity * Time.deltaTime);
         }
-
+        
         return newVelocity;
     }
 }
