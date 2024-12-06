@@ -51,7 +51,6 @@ public class PlayerController : MonoBehaviour
             if (input == Vector3.zero)
             {
                 newVelocity = Vector3.zero;
-                Debug.Log("Zerooooooooo");
             }
             else
                 newVelocity = transform.rotation * input * moveSpeed /* * Time.deltaTime */;
