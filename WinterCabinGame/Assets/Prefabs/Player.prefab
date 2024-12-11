@@ -555,7 +555,7 @@ MonoBehaviour:
   moveSpeed: 0.1
   airMoveSpeed: 0.4
   rotationSpeed: 300
-  gravity: -0.02
+  gravity: -1
 --- !u!114 &5868193876984292136
 MonoBehaviour:
   m_ObjectHideFlags: 0

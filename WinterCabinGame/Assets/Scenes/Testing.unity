@@ -779,10 +779,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9035315149314970040, guid: 13867ce6caf376a459bcfb4e75c547ef, type: 3}
-      propertyPath: baseHighlightColor
-      value: 
-      objectReference: {fileID: 2100000, guid: 9a248158ab88a4145b986862e8f3e98a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4211,26 +4207,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5834816914213881409, guid: 3f6369cb1bc6401438d595bbe089affa, type: 3}
-      propertyPath: gravity
-      value: -0.02
-      objectReference: {fileID: 0}
     - target: {fileID: 5868193876984292136, guid: 3f6369cb1bc6401438d595bbe089affa, type: 3}
       propertyPath: world
       value: 
       objectReference: {fileID: 1486983243}
-    - target: {fileID: 5868193876984292136, guid: 3f6369cb1bc6401438d595bbe089affa, type: 3}
-      propertyPath: rayMask.m_Bits
-      value: 64
-      objectReference: {fileID: 0}
-    - target: {fileID: 5868193876984292136, guid: 3f6369cb1bc6401438d595bbe089affa, type: 3}
-      propertyPath: floorMask.m_Bits
-      value: 128
-      objectReference: {fileID: 0}
-    - target: {fileID: 8719909752478203413, guid: 3f6369cb1bc6401438d595bbe089affa, type: 3}
-      propertyPath: m_ClearFlags
-      value: 4
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

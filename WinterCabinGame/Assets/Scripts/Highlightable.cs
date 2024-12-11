@@ -6,7 +6,7 @@ using UnityEngine;
 public class Highlightable : Interactable
 {
     [field: SerializeField]
-    private Material highlight;
+    private GameObject pin;
 
     [field: SerializeField]
     public int id { get; private set; }
@@ -16,17 +16,23 @@ public class Highlightable : Interactable
     public override void Activate()
     {
         OnCLick?.Invoke(this);
-        isSelected = !isSelected;
+        SelectionUpdate();
+        Debug.Log($"{isSelected}");
         return;
     }
 
-    public void ChangeMaterial(Material oldMaterial)
+    public void UpdatePin()
     {
-        if (isSelected)
-        {
-            Debug.Log($"changed");
-        }
+        if (isSelected == true)
+            pin.SetActive(true);
+        else if (isSelected == false)
+            pin.SetActive(false);
     }
 
+    public void SelectionUpdate()
+    {
+        isSelected = !isSelected;
+        UpdatePin();
+    }
     public event Action <Highlightable> OnCLick;
 }

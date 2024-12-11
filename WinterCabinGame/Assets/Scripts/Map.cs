@@ -17,12 +17,11 @@ public class Map : MonoBehaviour
     [SerializeField]
     private Highlightable[] highlights;
 
-    [SerializeField]
-    private Material baseHighlightColor;
-
     public int currentMapPage { get; private set; }
 
     public int selectedSection { get; private set; }
+
+    private Highlightable previousSection;
 
     private void Start()
     {
@@ -46,12 +45,17 @@ public class Map : MonoBehaviour
     private void HandleHighlightClick(Highlightable section)
     {
         selectedSection = section.id;
-        section.ChangeMaterial(baseHighlightColor);
+
+        if (previousSection != null)
+            previousSection.SelectionUpdate();
+        previousSection = section;
         Debug.Log($"{selectedSection}");
     }
 
     private void ChangeMapPage(int curpage, int page)
     {
+        CleanMap();
+
         if(curpage + page >= maps.contents.Count || curpage + page < 0)
         {
             return;
@@ -69,5 +73,15 @@ public class Map : MonoBehaviour
         mapRenderer.material = newMaterial;
         
         Debug.Log($"{currentMapPage}");
+    }
+
+    private void CleanMap()
+    {
+        if (previousSection != null)
+        {
+            previousSection.SelectionUpdate();
+            previousSection = null;
+        }
+        selectedSection = -1;
     }
 }
