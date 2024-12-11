@@ -21,6 +21,9 @@ public class BookDisplay : MonoBehaviour
     [SerializeField]
     private Button leftButton;
 
+    [SerializeField]
+    private GameObject pageChangers;
+
     private Book book;
     private GameObject instanceBook;
     private int bookID = 0;
@@ -50,6 +53,7 @@ public class BookDisplay : MonoBehaviour
         ObtainBookData();
         instanceBook = Instantiate(openedBook, openedBookPivot);
         UpdatePage();
+        pageChangers.SetActive(true);
         return;
     }
 
@@ -90,5 +94,6 @@ public class BookDisplay : MonoBehaviour
         bookID = 0;
         book = null;
         Destroy(instanceBook);
+        pageChangers.SetActive(false);
     }
 }
