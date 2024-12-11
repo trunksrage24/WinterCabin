@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edfee84c0dbfb324894c85813492dfb8, type: 3}
   m_Name: FirstPuzzle
   m_EditorClassIdentifier: 
-  level: 5
+  level: 4
   section: 6
