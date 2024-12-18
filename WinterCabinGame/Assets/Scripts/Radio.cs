@@ -22,15 +22,16 @@ public class Radio : MonoBehaviour
     private PuzzleSolution solution2;
 
     [SerializeField]
-    private GameObject puzzleUI1;
+    private GameObject[] puzzleUIs;
 
     [SerializeField]
-    private GameObject puzzleUI2;
-
-    [SerializeField]
-    private GameObject puzzleUI3;
+    private GameObject[] dialogs;
 
     private int currentPuzzle = 1;
+
+    private bool dialogPhase = true;
+
+    private int dialogCounter = 0;
 
     void Start()
     {
@@ -40,15 +41,21 @@ public class Radio : MonoBehaviour
 
     private void HandleButtonClick(Button button)
     {
-        Debug.Log($"Am here uwu I was here");
 
-        if(IsPuzzleComplete(currentPuzzle))
+        if(!dialogPhase)
         {
-            UpdatePuzzle();
-            Debug.Log($"{currentPuzzle}");
+            if(IsPuzzleComplete(currentPuzzle))
+            {
+                UpdatePuzzle();
+                Debug.Log($"{currentPuzzle}");
+            }
+            else
+                return;
         }
         else
-            return;
+        {
+            ShowDialog();
+        }
     }
 
     private void UpdatePuzzle()
@@ -93,21 +100,36 @@ public class Radio : MonoBehaviour
         Debug.Log($"{map.currentMapPage + 1} {map.selectedSection}");
         return false;
     }
+
     private void UIUpdate()
     {
         if (currentPuzzle == 1)
-            puzzleUI1.SetActive(true);
+            puzzleUIs[0].SetActive(true);
         else if (currentPuzzle == 2)
         {
-            puzzleUI1.SetActive(false);
-            puzzleUI2.SetActive(true);
+            puzzleUIs[0].SetActive(false);
+            puzzleUIs[1].SetActive(true);
         }
         else
         {
-            puzzleUI1.SetActive(false);
-            puzzleUI2.SetActive(false);
-            puzzleUI3.SetActive(true);
+            puzzleUIs[1].SetActive(false);
+            puzzleUIs[2].SetActive(true);
         }
         
+    }
+
+    private void ShowDialog()
+    {
+        if (dialogCounter < 5 & currentPuzzle == 1)
+        {
+            dialogCounter += 1;
+        }
+        else if (dialogCounter < 10 & currentPuzzle == 2)
+        {
+            dialogCounter += 1;
+        }
+        else
+            dialogPhase = false;
+
     }
 }
