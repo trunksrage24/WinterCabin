@@ -119,7 +119,8 @@ public class Radio : MonoBehaviour
             puzzleUIs[1].SetActive(false);
             puzzleUIs[2].SetActive(true);
         }
-        
+
+        dialogs[dialogCounter - 1].SetActive(false);
     }
 
     private void ShowDialog()
@@ -129,7 +130,7 @@ public class Radio : MonoBehaviour
             dialogs[dialogCounter].SetActive(true);
             dialogCounter += 1;
         }
-        else if (dialogCounter < 5 & currentPuzzle == 1 || dialogCounter < 10 & currentPuzzle == 2)
+        else if (dialogCounter < 6 & currentPuzzle == 1 || dialogCounter < 16 & currentPuzzle == 2)
         {
             dialogs[dialogCounter].SetActive(true);
             dialogs[dialogCounter - 1].SetActive(false);
