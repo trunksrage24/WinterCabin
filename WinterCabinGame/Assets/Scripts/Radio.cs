@@ -36,7 +36,7 @@ public class Radio : MonoBehaviour
     void Start()
     {
         radioButton.OnCLick += HandleButtonClick;
-        UIUpdate();
+        ShowDialog();
     }
 
     private void HandleButtonClick(Button button)
@@ -63,10 +63,14 @@ public class Radio : MonoBehaviour
         if(currentPuzzle + 1 <= puzzles)
         {
             currentPuzzle += 1;
-            UIUpdate();
+            dialogPhase = true;
+            ShowDialog();
         }
         else
+        {
+            ShowDialog();
             return;
+        }
     }
     private bool IsPuzzleComplete(int puzzle)
     {
@@ -120,16 +124,22 @@ public class Radio : MonoBehaviour
 
     private void ShowDialog()
     {
-        if (dialogCounter < 5 & currentPuzzle == 1)
+        if (dialogCounter == 0)
         {
+            dialogs[dialogCounter].SetActive(true);
             dialogCounter += 1;
         }
-        else if (dialogCounter < 10 & currentPuzzle == 2)
+        else if (dialogCounter < 5 & currentPuzzle == 1 || dialogCounter < 10 & currentPuzzle == 2)
         {
+            dialogs[dialogCounter].SetActive(true);
+            dialogs[dialogCounter - 1].SetActive(false);
             dialogCounter += 1;
         }
         else
+        {
             dialogPhase = false;
+            UIUpdate();
+        }
 
     }
 }
