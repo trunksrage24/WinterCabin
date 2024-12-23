@@ -1,37 +1,62 @@
 # Winter Cabin - Report
 
 ## Presentation:
-- Made by Rodrigo Pires (%) and André Sebastião (%);
-- Information written by both(%/%);
+- Written by Rodrigo Pires (45%), André Sebastião (45%) and Alexandre 
+Teixeira (10%);
 - Visual Aspect made by André.
 
 ---
 
 ## Spec Sheet:
- - Made by Vitor Daniel (%) and Daniela Peixoto (%);
- - Information written by both (%/%);
+ - Made by Vitor Daniel (85%) and Daniela Peixoto (15%);
+ - Information written by both (60% / 40%);
  - Visual Aspect made by Vitor.
 
 ---
 
 ## GDD:
 
-### André Sebastião:
- - Designed the mockups;
- - Did Room Layout, UI and Menu Flow sections;
- - Did the Pitch;
- - Did (%) of the Presentation.
-
 ### Alexandre Teixeira:
  - Did the Sound section;
- - Did most of the Art section;
- - Did the formating for his sections and the history version formating as well.
+ - Did most of the Art section (90%);
+ - Did the formating for his sections and the history version formating as well;
+ - Did the Art and Sound sections of the presentation. <br>
+
+### André Sebastião:
+ - Designed the 3D mockups;
+ - Wrote the Room Layout sections and references, UI and Menu Flow sections;
+ - Did the Pitch; <br>
 
 ### Daniela Peixoto:
  - Did the room sketches;
- - Did (%) of the Level Design section;
- - Did (%) of the Puzzle Dependency Chart;
- - Did (%) of the Spec Sheet.
+ - Wrote the puzzle descriptions;
+ - Implemented the Puzzle Dependency Chart; <br>
 
 ### Rodrigo Pires:
- - 
+ - Wrote the Mechanics of the game, Puzzle Design Rules, Moles Characteristics, 
+Space Characteristics, Items Characteristics;
+ - Made the External Link section; <br>
+
+### Vitor Daniel:
+- Created the Basic Structure of the GDD;
+- Wrote the Synopsys of the game;
+- Wrote the Camera and Controls sections;
+- Wrote the Art Style section;
+- Did most of the formating of the GDD (85%). <br>
+
+---
+
+## Moodboard:
+ - Made by the artists: André, Alexandre, Daniela and Vitor.
+
+---
+
+## Assets List:
+ - Made by Alexandre and Daniela.
+
+---
+
+## Puzzle Dependency Chart:
+ - Made by Daniela and Vitor (80% / 20%),
+ - Information written by Daniela;
+ - Formating and organization of document made by Vitor.
