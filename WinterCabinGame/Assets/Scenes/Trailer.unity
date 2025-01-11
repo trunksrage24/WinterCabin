@@ -691,9 +691,9 @@ MonoBehaviour:
           z: 0
           w: 1
     - Position:
-        x: -1.705
-        y: 0
-        z: 0.059999943
+        x: -2.8899999
+        y: -0.0019999743
+        z: 0.060000002
       TangentIn:
         x: 0
         y: 0
@@ -733,7 +733,7 @@ Transform:
   m_GameObject: {fileID: 145245995}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.47, y: 1.18, z: 0.6280001}
+  m_LocalPosition: {x: -1.1, y: 1.632, z: 0.54}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3464,7 +3464,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1073848846}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.029086223, y: -0.2998668, z: -0.009147404, w: 0.9534937}
+  m_LocalRotation: {x: 0.025345586, y: -0.6573038, z: 0.022128198, w: 0.75287426}
   m_LocalPosition: {x: 3.5770001, y: 0, z: -0.42000008}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3502,7 +3502,7 @@ MonoBehaviour:
     - rid: 3770517050826162238
       type: {class: SplineAutoDolly/FixedSpeed, ns: Unity.Cinemachine, asm: Unity.Cinemachine}
       data:
-        Speed: 0
+        Speed: 0.15
 --- !u!114 &1073848852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6358,7 +6358,7 @@ Transform:
   m_GameObject: {fileID: 1910941948}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.73, y: 1.18, z: 1.048}
+  m_LocalPosition: {x: -4.3599997, y: 1.632, z: 0.96}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6394,7 +6394,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1924902005}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.029086223, y: -0.2998668, z: -0.009147404, w: 0.9534937}
+  m_LocalRotation: {x: 0.025345586, y: -0.6573038, z: 0.022128198, w: 0.75287426}
   m_LocalPosition: {x: 3.5770001, y: 0, z: -0.42000008}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
