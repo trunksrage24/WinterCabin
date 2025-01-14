@@ -11,11 +11,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/StartScreen.unity
     guid: d0574eb470112b7429f8b8f0461db9c0
-  - enabled: 1
-    path: Assets/Scenes/GameScene.unity
+  - enabled: 0
+    path: Assets/Scenes/OldGameScene.unity
     guid: abb31bcc70a481a4e8388e68f226b61c
   - enabled: 1
-    path: Assets/Scenes/Blocking_updated_sem_colliders.unity
+    path: Assets/Scenes/GameScene.unity
     guid: 48c782c8cc2aec34facd624c74264c89
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

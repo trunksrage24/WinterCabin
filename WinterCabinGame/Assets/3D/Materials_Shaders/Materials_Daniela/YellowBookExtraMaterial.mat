@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: YellowBookExtraMaterial
-  m_Shader: {fileID: -6465566751694194690, guid: 738dc4b9551562541877b75ac8ef459d, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: e47b0532bcc0d2840bf2cf90b006f4d7, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []

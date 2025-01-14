@@ -4,7 +4,7 @@ public class StartMenu : MonoBehaviour
 {
     public void Continue()
     {
-        LoadingSceneManager.Instance.LoadScene("Blocking_updated_sem_colliders");
+        LoadingSceneManager.Instance.LoadScene("GameScene");
     }
 
     public void Exit()

@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: BlueBookExtraMaterial
-  m_Shader: {fileID: -6465566751694194690, guid: 74eb3b2949c22be4a9a5a19255b83511, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: e47b0532bcc0d2840bf2cf90b006f4d7, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
